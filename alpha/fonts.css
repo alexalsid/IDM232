@@ -1,0 +1,90 @@
+@font-face {
+    font-family: SanFranciscoBold;
+    src: url(assets/font/SanFranciscoText-Bold.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoBoldItalic;
+    src: url(assets/font/SanFranciscoText-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoHeavy;
+    src: url(assets/font/SanFranciscoText-Heavy.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoHeavyItalic;
+    src: url(assets/font/SanFranciscoText-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoLight;
+    src: url(assets/font/SanFranciscoText-Light.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoLightItalic;
+    src: url(assets/font/SanFranciscoText-LightItalic.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoLightItalic;
+    src: url(assets/font/SanFranciscoText-LightItalic.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoMedium;
+    src: url(assets/font/SanFranciscoText-Medium.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoMediumItalic;
+    src: url(assets/font/SanFranciscoText-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoRegular;
+    src: url(assets/font/SanFranciscoText-Regular.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoRegularItalic;
+    src: url(assets/font/SanFranciscoText-RegularItalic.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoSemibold;
+    src: url(assets/font/SanFranciscoText-Semibold.otf);
+}
+
+@font-face {
+    font-family: SanFranciscoSemiboldItalic;
+    src: url(assets/font/SanFranciscoText-SemiboldItalic.otf);
+}
+
+h1 {
+    font-family: 'SanFranciscoMedium';
+}
+
+h2 {font-family: 'SanFranciscoMedium';}
+
+h3 {
+    font-family: 'SanFranciscoMedium';
+}
+
+h4 {
+    font-family: 'SanFranciscoSemibold';
+}
+
+a {font-family: 'SanFranciscoMediumItalic';}
+
+li {font-family: 'SanFranciscoRegular';}
+
+dt {font-family: 'SanFranciscoRegular';}
+
+dd {font-family: 'SanFranciscoLight'}
+
+p {font-family: 'SanFranciscoLight';}
+
+figcaption {font-family: 'SanFranciscoLight'}
