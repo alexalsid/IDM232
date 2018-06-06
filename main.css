@@ -1,0 +1,246 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #212121;
+    height: 50px;
+    width: 100%;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    position: fixed;
+    top: 0;
+}
+
+#search-glyph {
+    float: right;
+    margin: 10px;
+    transition: .2s;
+}
+
+#search-glyph:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+main {
+    background-color: #fafafa;
+    margin-top: 50px;
+}
+
+#top {
+    width: 100%;
+    height: 250px;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+}
+
+#search-bar {
+    height: 40px;
+    width: 85%;
+    margin: auto;
+    background-color: #fafafa;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    padding-left: 10px;
+    border: none;
+    display: block;
+    font-size: 1.2em
+}
+
+#submit {
+    border: none;
+    height: 40px;
+    width: 100px;
+    background-color: #212121;
+    color: white;
+    display: block;
+    margin: 20px auto;
+}
+
+#top a {
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#top a:hover {
+    cursor: pointer;
+}
+
+#about {
+    margin: 20px auto;
+    width: 75ch;
+    grid-column: 1/3;
+}
+
+#about p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#cata-head {
+    margin: 20px 12px;
+}
+
+#catagory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#catagory div {
+    background-image: url(assets/img/stock.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding: 50px 0;
+}
+
+h4 {
+    text-align: center;
+    align-self: center;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: #212121;
+}
+
+#news-letter {
+    width: 100%;
+    background-color: #f93f24;
+    padding: 20px 0 20px 0;
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.5em;
+}
+
+footer input {
+    display: block;
+    border: none;
+}
+
+footer input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+footer #submit {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 20px auto 0 auto;
+}
+
+/* SEARCH SCREEN */
+
+.no-display {
+    display: none;
+}
+
+.display {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+#exit {
+    float: right;
+    margin: 10px 10px;
+    display: block;
+}
+
+#search-recipes {
+    border: none;
+    border-bottom: solid 1px black;
+    display: block;
+    margin: 200px auto;
+    width: 85%;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+#search-recipes:focus {
+    border: none;
+}
+
+/*TABLET no layout changes just resizing */
+
+@media screen and (min-width: 40rem) {
+    header {
+        height: 60px;
+        padding-top: 10px
+    }
+    #logo {
+        transform: scale(1.3);
+        margin-left: 10px;
+    }
+    #search-bar {
+        width: 70%;
+    }
+    #about {
+        margin: 20px auto;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    #catagory {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    #catagory div {
+        height: 75px;
+        padding: 75px 0;
+    }
+    footer {
+        margin-top: 10px;
+    }
+    footer input[type="text"] {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 62rem) {
+    #search-bar {
+        width: 50%;
+    }
+    #top a {
+        font-size: 1.4em;
+    }
+    #about {
+        margin: 20px auto;
+    }
+    #catagory {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #catagory div {
+        height: 75px;
+        padding: 100px 0;
+    }
+    #news-letter {
+        width: 25%
+    }
+    footer input[type="text"] {
+        font-size: 1.2em;
+    }
+}
