@@ -1,0 +1,119 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: 70px 20px 20px 20px;
+    padding: 20px;
+}
+
+#search-box {
+    border: none;
+    border-bottom: solid 1px black;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    justify-items: center;
+    margin-top: 40px;
+}
+
+#submit {
+    border: none;
+    height: 40px;
+    width: 100px;
+    background-color: #212121;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    transition: .2s;
+}
+
+#submit:hover {
+    background-color: #f93f24;
+}
+
+.result-card {
+    width: 250px;
+    height: 300px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 250px 50px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.result-card:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#results img {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    display: none;
+}
+
+/*********TABLET **********/
+
+@media screen and (min-width: 40rem) {
+    #logo {
+        transform: scale(1.3);
+        margin-left: 10px;
+    }
+    p {
+        display: inline;
+    }
+}
+
+/*DESKTOP */
+
+@media screen and (min-width: 62rem) {
+    #search-box {
+        width: 50%;
+    }
+    #submit {
+        height: 20px;
+        widows: 50px;
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+footer {
+    height: 20px;
+    background-color: #212121;
+    padding-left: 10px;
+}
+
+footer p {
+    font-size: 10px;
+    color: lightgray;
+}
+
+/* no results */
+
+#no-results {
+    margin-bottom: 100px;
+}
+
+#sad-face {
+    transform: scale(2);
+    display: block;
+    margin: 100px auto;
+}
+
+#no-results h1 {
+    text-align: center;
+    max-width: 40ch;
+}

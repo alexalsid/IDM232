@@ -1,0 +1,220 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #fafafa;
+    margin-top: 50px;
+}
+
+#top {
+    width: 100%;
+    height: 250px;
+    background-image: url(assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+}
+
+#search-bar {
+    height: 40px;
+    width: 85%;
+    margin: auto;
+    background-color: #fafafa;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    padding-left: 10px;
+    border: none;
+    display: block;
+    font-size: 1.2em
+}
+
+#submit {
+    border: none;
+    height: 40px;
+    width: 100px;
+    background-color: #212121;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    transition: .2s;
+}
+
+#submit:hover {
+    background-color: #f93f24;
+}
+
+#top a {
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: .2s;
+}
+
+#top a:hover {
+    cursor: pointer;
+    color: #f93f24;
+}
+
+#about {
+    margin: 20px 12px;
+}
+
+.underline {
+    height: 3px;
+    width: 30%;
+    background-color: #f93f24;
+    margin: 0 auto;
+}
+
+#about p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#cata-head {
+    margin: 20px 12px;
+}
+
+#catagory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1280px;
+    margin: 15px;
+}
+
+#cata-1 {
+    background-image: url(assets/img/chicken.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding: 50px 0;
+}
+
+#cata-2 {
+    background-image: url(assets/img/beef.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding: 50px 0;
+}
+
+#cata-3 {
+    background-image: url(assets/img/vegetarian.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding: 50px 0;
+}
+
+#cata-4 {
+    background-image: url(assets/img/pork.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding: 50px 0;
+}
+
+#cata-5 {
+    background-image: url(assets/img/turkey.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding: 50px 0;
+}
+
+#cata-6 {
+    background-image: url(assets/img/fish.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    padding: 50px 0;
+}
+
+h4 {
+    text-align: center;
+    align-self: center;
+    color: white;
+}
+
+/*TABLET no layout changes just resizing */
+
+@media screen and (min-width: 40rem) {
+    #logo {
+        transform: scale(1.3);
+        margin-left: 10px;
+    }
+    #nav {
+        display: inline-block;
+    }
+    #search-bar {
+        width: 70%;
+    }
+    #search-glyph {
+        margin-bottom: 10px;
+    }
+    #about {
+        margin: 40px 30px;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    #catagory {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    #catagory div {
+        height: 75px;
+        padding: 75px 0;
+    }
+}
+
+@media screen and (min-width: 62rem) {
+    #search-bar {
+        width: 50%;
+    }
+    #top a {
+        font-size: 1.4em;
+    }
+    #about {
+        width: 800px;
+        margin: 40px auto;
+    }
+    #catagory {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #catagory div {
+        height: 75px;
+        padding: 100px 0;
+    }
+}
+
+footer {
+    height: 20px;
+    background-color: #212121;
+    padding-left: 10px;
+   
+}
+
+footer p {
+    font-size: 10px;
+    color: lightgray;
+}
